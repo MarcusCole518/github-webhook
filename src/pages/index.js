@@ -69,6 +69,9 @@ const moreLinks = [
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
+export const Head = () => <meta name="test" content="Gatsby v4.19.1"/>
+
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
