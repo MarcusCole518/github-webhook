@@ -8,7 +8,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        headers: {
+          "/404": [
+            "statusCode: 404",
+          ],
+        },
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
