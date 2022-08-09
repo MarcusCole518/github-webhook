@@ -7,8 +7,9 @@ exports.createPages = async ({ graphql, actions }) => {
     defer: true,
   }),
   createRedirect({
-    fromPath: `/page-3/`,
-    toPath: `https://collarcitycode.com/`,
-    statusCode: 200,
+    fromPath: `/404`,
+    toPath: `/404`,
+    redirectInBrowser: true,
+    statusCode: 404,
   })
 }
