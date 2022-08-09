@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
     defer: true,
   }),
   createRedirect({
-    fromPath: `/page-2`,
+    fromPath: `/page-2/`,
     toPath: `https://www.google.com/`,
     statusCode: 200,
   })
