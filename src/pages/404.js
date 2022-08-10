@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const NotFoundPage = () => (
+const NotFoundPage = ({serverData}) => (
   <Layout>
     <Seo title="404: Not found" />
     <h1>404: Not Found</h1>
@@ -12,3 +12,9 @@ const NotFoundPage = () => (
 )
 
 export default NotFoundPage
+
+export async function getServerData() {
+  return {
+    status: 404,
+  }
+}
