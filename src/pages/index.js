@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Header from "../components/header"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -75,6 +76,7 @@ export const Head = () => <meta name="test" content="Gatsby 4.19.1"/>
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+    <Header />
     <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"
