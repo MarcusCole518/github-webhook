@@ -5,11 +5,5 @@ exports.createPages = async ({ graphql, actions }) => {
     component: require.resolve("./src/templates/using-dsg.js"),
     context: {},
     defer: true,
-  }),
-  createRedirect({
-    fromPath: `/404`,
-    toPath: `/404`,
-    redirectInBrowser: true,
-    statusCode: 404,
   })
 }
